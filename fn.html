@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="shortcut icon" href="https://shrmn.toys/dumbass.png" type="image/x-icon">
+    <link rel="icon" href="https://shrmn.toys/dumbass.png" type="image/x-icon">
+  </head>
+  <body style="margin: 0; text-align: center; background-color: #000000" >
+    <script src= "https://player.twitch.tv/js/embed/v1.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="/js/getStream.js"></script>
+    <div style="margin-left: auto; margin-right: auto; padding-top: 50px">
+      <img src="spect.gif"></img></div>
+    <div style="margin-left: auto; margin-right: auto;">
+      <div id="stream" style="width: 1000px; height: 600px;
+        margin:auto; position: relative">
+      </div>
+      <button onclick="start()" style="top: 200px; position: fixed;">
+        Let's Play</button>
+      <img src="/poses/debord.png"
+      style="position: fixed; left: 50px; top: 500px;
+          width: 120px; heigh: 120px; z-index: 1;"></img>
+    </div>
+    <script type="text/javascript">
+      function start(){
+        channelID(embed);
+      }
+
+      function embed(name){
+        var options = {
+          width: 1000,
+          height: 600,
+          channel: name,
+          controls: "false",
+          allowfullscreen: "false",
+        };
+        var player = new Twitch.Player('stream', options);
+        player.setVolume(0.5);
+        }
+    </script>
+  </body>
+</html>

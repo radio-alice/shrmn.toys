@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>net.poetry</title>
+    <link rel="shortcut icon" href="https://shrmn.toys/dumbass.png" type="image/x-icon">
+    <link rel="icon" href="https://shrmn.toys/dumbass.png" type="image/x-icon">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Noto+Serif|Overpass+Mono">
+  </head>
+  <style>
+    body {
+    background-color: #FF6523;
+    }
+    h1 {
+    text-align: left;
+    padding-left: 100px;
+    font-size: 60px;
+    font-family: 'Noto Serif', serif;
+    font-weight: 500;
+    }
+    pre {
+    text-align: left;
+    padding-left: 100px;
+    font-family: 'Overpass Mono', monospace;
+    }
+    #textArea {
+      margin-right: auto;
+      padding-left: 100px;
+      font-family: 'Overpass Mono', monospace;
+    }
+    #input {
+      margin-left: auto;
+      padding-left: 100px;
+      padding-top: 20px;
+    }
+    #button {
+      margin: auto;
+      padding-left: 100px;
+      padding-top: 20px;
+    }
+    #poemDiv {
+      text-align: left;
+      padding-left: 100px;
+      padding-top: 50px;
+      position: relative;
+    }
+    #poemPlace {
+      color: white;
+      background-color: black;
+      z-index: 1;
+      font-family: 'Overpass Mono', monospace;
+    }
+  </style>
+  <body>
+    <script src="/js/netpoetry.js"></script>
+    <h1>net.poetry</h1>
+    <pre>enter text here (max: 1200 characters)
+    <br>but like a lot of text</pre>
+    <div id="textArea"><textarea id="textIn" maxlength="1200"
+    cols="100" rows="13" required wrap="soft">
+    unfiltered thoughts</textarea></div>
+    <div id="input">
+      <input id="chunkSize" maxlength="2" type="number"
+        min="2" max="20" required></input>
+      <pre style="padding-left: 0px; text-align: none">how big chunksss</pre>
+    </div>
+    <div id="button"><button onclick="shuffle()" style="margin: auto">generate poem</button></div>
+    <div id="poemDiv">
+      <span id="poemPlace">poem appears here (patience)</span>
+    </div>
+  </body>
+</html>
