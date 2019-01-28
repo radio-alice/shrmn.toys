@@ -7,40 +7,56 @@
     <link href="https://fonts.googleapis.com/css?family=Lora|Overpass+Mono|Plaster" rel="stylesheet">
     <title>pick which me</title>
     <style>
-    body {margin: 0%;}
+    html, body, .main {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            cursor: url(/links:images/drone.png), context-menu;
+          }
     .main {
-      width: 100%;
-      height: 100%;
       display: flex;
+      flex-direction: row;
     }
     .left{
       flex: 1;
       text-align: center;
-      background-color: #e0e0e0;
+      background-color: #f4f4f4;
+      border-style: double;
       border-width: 30px;
-      border-color: black;
+      border-color: #333333;
+      align-self: stretch;
+      padding-top: 10%;
+    }
+    .leftText {
       font-size: 40px;
       font-family: 'Overpass Mono', monospace;
-
+      font-weight: bold;
+      color: blue;
     }
     .right{
       flex: 1;
       text-align: center;
+      align-self: stretch;
       background-color: blue;
       background-image: url(/links:images/has_money.gif);
       background-repeat: repeat;
-      font-size: 40px;
+      padding-top: 45%;
+    }
+    .rightText {
+      font-size: 70px;
       font-family: 'Plaster', cursive;
+      color: #f900a6;
     }
     </style>
   </head>
   <body>
     <div class="main">
       <div class="left">
-        <a href="professional.html">Professional Innovative Visionary Zach Sherman</a>
+        <a href="professional.html" class="leftText">
+          Professional Innovative Visionary Zach Sherman</a>
       </div>
       <div class="right">
-        <a href="toys.html">WHACH ZACH</a>
+        <a href="toys.html" class="rightText">!WHACH ZACH!</a>
       </div>
     </div>
   </body>
