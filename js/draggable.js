@@ -1,6 +1,6 @@
 var files = document.getElementsByClassName('file');
 
-wind.onload = function () {
+window.onload = function () {
   for (let i = 0; i < files.length; i++){
     dragElement(files[i]);
   }
