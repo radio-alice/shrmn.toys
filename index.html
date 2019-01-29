@@ -62,8 +62,8 @@
   </head>
   <body>
     <script>
-    function open(path){
-      window.open("https://shrmn.toys/links:images/" + path, "width=1000, height=1000")
+    function openFile(path){
+      window.open("https://shrmn.toys/links:images/" + path);
     }
     </script>
     <div class="main">
@@ -76,7 +76,7 @@
           </div>
           <div class="file" style="left: 80px; bottom: 90px">
             <img width="100px" height="100px" src="/links:images/pdf.png"
-            ondblclick="open('PolicyRes.pdf')">
+            ondblclick="openFile('PolicyRes.pdf')">
             <p class="label">policy_research_res.pdf<p>
           </div>
           <div class="file" style="left: 200px; bottom: 180px">
