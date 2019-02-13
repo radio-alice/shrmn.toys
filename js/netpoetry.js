@@ -77,6 +77,7 @@ function searchFor(query, number, callback) {
       .then(handleErrors)
       .then(function(response) {
         var data = response.json();
+        console.log(data);
         var description = data.value[0].description;
         var preSnip = description.split(' ')
                                    .slice(0, number)
