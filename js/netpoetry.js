@@ -65,7 +65,7 @@ function searchFor(query, number, callback) {
                          .replace('?','')
                          .replace('.','')
                          .replace(/\s/g,"+");
-    var url = "https://contextualwebsearch-websearch-v1.p.rapidapi.com/api/Search/WebSearchAPI?autoCorrect=true&pageNumber=1&pageSize=1&q=" + cleanQ + "&safeSearch=false";
+    var url = "https://contextualwebsearch-websearch-v1.p.rapidapi.com/api/Search/WebSearchAPI?pageNumber=1&pageSize=1&q=" + cleanQ + "&safeSearch=false";
     var cHeaders = new Headers({
       "X-RapidAPI-Key": "4HyNtWOP0vmshy4Xcr9E6ECzk15ip1lgVLdjsnPKFR3o5Y8ZlQ"
     });
@@ -75,10 +75,11 @@ function searchFor(query, number, callback) {
     var cRequest = new Request(url, cInit);
     fetch(cRequest)
       .then(handleErrors)
-      .then(function(response) {
-        var data = response.json();
-        console.log(data);
-        var description = data.value[0].description;
+      .then(response => {
+        return JSON.stringify(response);
+      })
+      .then(response=> {
+        var description = response.value[0].description;
         var preSnip = description.split(' ')
                                    .slice(0, number)
                                    .join(' ')
