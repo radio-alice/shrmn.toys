@@ -75,9 +75,9 @@ function searchFor(query, number, callback) {
     var cRequest = new Request(url, cInit);
     fetch(cRequest)
       .then(handleErrors)
-      // .then(response => {
-      //   return JSON.stringify(response);
-      // })
+      .then(response => {
+        return response.json();
+      })
       .then(response=> {
         console.log(response);
         var description = response.value[0].description;
@@ -109,9 +109,9 @@ function searchImg(query) {
 
   fetch(iRequest)
     .then(handleErrors)
-    // .then(response => {
-    //   return JSON.stringify(response);
-    // })
+    .then(response => {
+      return response.json();
+    })
     .then(function(response) {
       var imgURL = response.value[0].url;
       insert(imgURL);
