@@ -133,7 +133,7 @@ function insert(url){
 
 function handleErrors(response) {
     if (!response.ok) {
-        throw Error(response.statusText);
+        console.log(response.statusText);
     }
     return response;
 }
