@@ -66,10 +66,16 @@ function searchFor(query, number, callback) {
                          .replace('.','')
                          .replace(/\s/g,"+");
     var url = "https://contextualwebsearch-websearch-v1.p.rapidapi.com/api/Search/WebSearchAPI?autoCorrect=true&pageNumber=1&pageSize=1&q=" + cleanQ + "&safeSearch=false";
-    var xhr = new XMLHttpRequest();
-    xhr.onreadystatechange = function() {
-      if (xhr.status == 200) {
-        var data = JSON.parse(xhr.responseText);
+    var cHeaders = new Headers({
+      "X-RapidAPI-Key": "4HyNtWOP0vmshy4Xcr9E6ECzk15ip1lgVLdjsnPKFR3o5Y8ZlQ"
+    });
+    var cInit = { method: 'GET',
+                  headers: cHeaders };
+
+    var cRequest = new Request(url, cInit);
+    fetch(cRequest)
+      .then(function(response) {
+        var data = response.json();
         var description = data.value[0].description;
         var preSnip = description.split(' ')
                                    .slice(0, number)
@@ -79,16 +85,9 @@ function searchFor(query, number, callback) {
         snippet += preSnip + ' ';
         callback(snippet);
         searchImg(preSnip);
-      } else {
-        console.log('Looks like there was a problem. Status Code: ' +
-          xhr.status);
-      }
+      };
     }
-    xhr.open("GET", url);
-    xhr.setRequestHeader("X-RapidAPI-Key", "4HyNtWOP0vmshy4Xcr9E6ECzk15ip1lgVLdjsnPKFR3o5Y8ZlQ");
-    xhr.send();
   }
-}
 
 function searchImg(query) {
   var poemDiv = document.getElementById('poemDiv');
@@ -97,21 +96,19 @@ function searchImg(query) {
                        .replace('.','')
                        .replace(/\s/g,"+");
   var url = "https://contextualwebsearch-websearch-v1.p.rapidapi.com/api/Search/ImageSearchAPI?autoCorrect=true&pageNumber=1&pageSize=1&q=" + cleanQ + "&safeSearch=false";
-  var xhr = new XMLHttpRequest();
-  xhr.onreadystatechange = function() {
-    if (xhr.status == 200) {
-      var data = JSON.parse(xhr.responseText);
+  var iHeaders = new Headers({
+    "X-RapidAPI-Key", "4HyNtWOP0vmshy4Xcr9E6ECzk15ip1lgVLdjsnPKFR3o5Y8ZlQ"
+  });
+  var iInit = { method: 'GET',
+                headers: iHeaders };
+  var iRequest = new Request(url, iInit);
+
+  fetch(cRequest)
+    .then(function(response) {
+      var data = response.json();
       var imgURL = data.value[0].url;
       insert(imgURL);
-    } else {
-      console.log('Looks like there was a problem. Status Code: ' +
-        xhr.status);
-    }
-  }
-
-  xhr.open("GET", url);
-  xhr.setRequestHeader("X-RapidAPI-Key", "4HyNtWOP0vmshy4Xcr9E6ECzk15ip1lgVLdjsnPKFR3o5Y8ZlQ");
-  xhr.send();
+    };
 }
 
 function append(textArray){
