@@ -74,6 +74,7 @@ function searchFor(query, number, callback) {
 
     var cRequest = new Request(url, cInit);
     fetch(cRequest)
+      .then(handleErrors)
       .then(function(response) {
         var data = response.json();
         var description = data.value[0].description;
@@ -104,6 +105,7 @@ function searchImg(query) {
   var iRequest = new Request(url, iInit);
 
   fetch(cRequest)
+    .then(handleErrors)
     .then(function(response) {
       var data = response.json();
       var imgURL = data.value[0].url;
@@ -127,4 +129,11 @@ function insert(url){
   img.style.zIndex = '-2';
 
   poemDiv.appendChild(img);
+}
+
+function handleErrors(response) {
+    if (!response.ok) {
+        throw Error(response.statusText);
+    }
+    return response;
 }
