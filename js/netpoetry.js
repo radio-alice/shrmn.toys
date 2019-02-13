@@ -85,7 +85,7 @@ function searchFor(query, number, callback) {
         snippet += preSnip + ' ';
         callback(snippet);
         searchImg(preSnip);
-      };
+      });
     }
   }
 
@@ -108,7 +108,7 @@ function searchImg(query) {
       var data = response.json();
       var imgURL = data.value[0].url;
       insert(imgURL);
-    };
+    });
 }
 
 function append(textArray){
