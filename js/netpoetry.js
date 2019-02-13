@@ -79,6 +79,7 @@ function searchFor(query, number, callback) {
         return JSON.stringify(response);
       })
       .then(response=> {
+        console.log(response);
         var description = response.value[0].description;
         var preSnip = description.split(' ')
                                    .slice(0, number)
@@ -106,11 +107,13 @@ function searchImg(query) {
                 headers: iHeaders };
   var iRequest = new Request(url, iInit);
 
-  fetch(cRequest)
+  fetch(iRequest)
     .then(handleErrors)
+    .then(response => {
+      return JSON.stringify(response);
+    })
     .then(function(response) {
-      var data = response.json();
-      var imgURL = data.value[0].url;
+      var imgURL = response.value[0].url;
       insert(imgURL);
     });
 }
