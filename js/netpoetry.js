@@ -97,7 +97,7 @@ function searchImg(query) {
                        .replace(/\s/g,"+");
   var url = "https://contextualwebsearch-websearch-v1.p.rapidapi.com/api/Search/ImageSearchAPI?autoCorrect=true&pageNumber=1&pageSize=1&q=" + cleanQ + "&safeSearch=false";
   var iHeaders = new Headers({
-    "X-RapidAPI-Key", "4HyNtWOP0vmshy4Xcr9E6ECzk15ip1lgVLdjsnPKFR3o5Y8ZlQ"
+    "X-RapidAPI-Key": "4HyNtWOP0vmshy4Xcr9E6ECzk15ip1lgVLdjsnPKFR3o5Y8ZlQ"
   });
   var iInit = { method: 'GET',
                 headers: iHeaders };
