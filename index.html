@@ -7,59 +7,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lora|Overpass+Mono|Plaster" rel="stylesheet">
     <title>pick which me</title>
     <script src="/js/draggable.js"></script>
-    <style>
-    html, body, .main {
-            width: 100%;
-            height: 100%;
-            margin: 0;
-            cursor: url(/links:images/drone.png) 20 20, context-menu;
-          }
-    .main {
-      display: flex;
-      flex-direction: row;
-    }
-    .left{
-      flex: 1;
-      text-align: center;
-      background-color: #f4f4f4;
-      border-style: double;
-      border-width: 30px;
-      border-color: #333333;
-      align-self: stretch;
-      padding-top: 10%;
-    }
-    .leftText {
-      font-size: 40px;
-      font-family: 'Overpass Mono', monospace;
-      font-weight: bold;
-      color: blue;
-    }
-    .right{
-      flex: 1;
-      text-align: center;
-      align-self: stretch;
-      background-color: blue;
-      background-image: url(/links:images/has_money.gif);
-      background-repeat: repeat;
-      padding-top: 30%;
-    }
-    .rightText {
-      font-size: 70px;
-      font-family: 'Plaster', cursive;
-      color: #ff0050;
-    }
-    .file{
-      position: absolute;
-      cursor: move;
-    }
-    .label{
-      font-family: Arial;
-      font-size: 15px;
-      text-align: center;
-      margin: 0;
-    }
-    a:hover{cursor: url(/links:images/mike.png) 25 25, pointer;}
-    </style>
+    <link rel="stylesheet" href="/css/index.css"></link>
   </head>
   <body>
     <script>
@@ -72,7 +20,8 @@
         <p class="leftText">Professional Innovative Visionary Zach Sherman</p>
         <div class="files">
           <div class="file" style="left: 300px; bottom: 30px">
-            <img width="100px" height="100px" src="/links:images/pdf.png">
+            <img width="100px" height="100px" src="/links:images/pdf.png"
+            ondblclick="openFile('Sherman__Resume.pdf')">
             <p class="label">media_research_res.pdf</p>
           </div>
           <div class="file" style="left: 80px; bottom: 90px">
