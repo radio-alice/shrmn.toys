@@ -21,8 +21,12 @@ function myMove(x) {
     new_row[i].style.left = posx[i] + 'px';
 
     var btn = document.createElement("BUTTON");
-    var t = document.createTextNode(" HELP ME !! ");
 
+    if (i < x/2) {
+      var t = document.createTextNode(" HELP ME !! ");
+    } else {
+      var t = document.createTextNode(" ¡¡ IM RACIST ");
+    }
     btn.appendChild(t);
     new_row[i].appendChild(btn);
     container.appendChild(new_row[i]);
