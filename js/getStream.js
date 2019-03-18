@@ -1,12 +1,13 @@
 function channelID (embedF){
-  var header = {headers:
+  var header = {
+    headers:
     {"Client-ID" : "ahdjbay0nwfudw247x8jxx1eogqz7g"},
     method:"GET"};
 
   var topUserUrl = 'https://api.twitch.tv/helix/streams?first=1&game_id=33214&type=live';
   var channel = getUser(topUserUrl, header, getChannel);
   return channel;
-  
+
   function getUser(url, params, callback){
     fetch(url, params)
       .then(

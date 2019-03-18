@@ -14,7 +14,7 @@
       <div id="stream" style="width: 1000px; height: 600px;
         margin:auto; position: relative">
       </div>
-      <button onclick="start()" style="top: 200px; position: fixed;">
+      <button id="letsplay" onclick="start()" style="top: 200px; position: fixed;">
         Let's Play</button>
       <img src="/poses/debord.png"
       style="position: fixed; left: 50px; top: 500px;
@@ -23,6 +23,8 @@
     <script type="text/javascript">
       function start(){
         channelID(embed);
+        var elem = document.getElementById('letsplay');
+        elem.parentNode.removeChild(elem);
       }
 
       function embed(name){
