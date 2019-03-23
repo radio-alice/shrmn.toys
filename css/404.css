@@ -1,0 +1,22 @@
+html{cursor: url(/links:images/drone.png) 20 20, context-menu;}
+#four {
+  position: absolute;
+  top: 10vh;
+  left: 50vw;
+  font-size: 150px;
+}
+
+#f {
+  position: absolute;
+  top: 40vh;
+  left: 50vw;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#container {
+width: 100vw;
+height: 100vh;
+position: relative;
+background: white;
+}

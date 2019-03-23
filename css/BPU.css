@@ -1,0 +1,30 @@
+#vid {
+    margin: auto;
+    width: 90%;
+}
+
+h1 {
+  color: white;
+  font-size: 50px;
+  font-family: 'Lora', serif;
+  font-weight: bold;
+  padding-left: 60px;
+}
+body {
+  background-color: black;
+  cursor: url(/links:images/drone.png) 20 20, context-menu;
+}
+pre {
+  color: white;
+  font-size: 25px;
+  font-family: 'Inconsolata', monospace;
+  padding-left: 120px;
+}
+.row {
+    display: flex;
+    margin: 0 auto;
+    padding-left: 30px;
+}
+.col {
+    flex: 50%;
+}
