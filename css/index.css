@@ -12,6 +12,8 @@ html, body, .main {
 .panel {
   text-align: center;
   align-self: stretch;
+  resize: horizontal;
+  overflow: auto;
 }
 .left{
   background-color: #f4f4f4;
@@ -19,8 +21,6 @@ html, body, .main {
   border-width: 30px;
   border-color: #333333;
   padding-top: 10%;
-  resize: horizontal;
-  overflow: auto;
 }
 .leftText {
   font-size: 40px;
