@@ -1,11 +1,10 @@
-html, body{
+html, body, .main {
         margin: 0;
         cursor: url(/links:images/drone.png) 20 20, context-menu;
+        height: 100%;
       }
 .main {
   width: 100%;
-  height: 100%;
-  margin: 1em 0;
   clear: both;
   display: table;
 }
@@ -14,14 +13,12 @@ html, body{
   align-self: stretch;
   resize: horizontal;
   overflow: auto;
-  height: 100%;
 }
 .left{
   background-color: #f4f4f4;
   border-style: double;
   border-width: 30px;
   border-color: #333333;
-  padding-bottom: 50%;
 }
 .leftText {
   font-size: 40px;
@@ -33,7 +30,7 @@ html, body{
   background-color: blue;
   background-image: url(/links:images/has_money.gif);
   background-repeat: repeat;
-  padding-top: 30%;
+  padding-top: 50%;
 }
 .rightText {
   font-size: 70px;
@@ -42,6 +39,7 @@ html, body{
 }
 .main .panel {
     display: table-cell;
+    padding-top: 10%;
 }
 .file{
   position: absolute;
