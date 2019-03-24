@@ -38,6 +38,12 @@
         margin-left: 5px;
         text-decoration: underline;
       }
+      .collapsible:before {
+        content: '&#128073;';
+      }
+      .active:before {
+        content: '&#128071;'
+      }
       .active, .collapsible:hover {
         color: #b8c0c6;
       }
@@ -63,7 +69,7 @@
           <a href="https://github.com/radio-alice/SALMOM-server">
             server</a>)
         </div>
-        <div class="collapsible">&#128073;<p>details...</p></div>
+        <div class="collapsible"><p>details...</p></div>
         <div class="details">
           <p>
             I was recently invited to perform at an audiovisual festival on
