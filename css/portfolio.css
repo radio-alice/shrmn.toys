@@ -1,0 +1,50 @@
+body, main {
+height: 100%;
+background-color: #EDF2F7;
+cursor: url(/links:images/drone.png) 20 20, context-menu;
+}
+main {
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  padding-top: 50px;
+}
+.project {
+  margin: 20px;
+  font-size: 24px;
+  font-family: 'Noto Serif', serif;
+}
+p, summary {
+  font-size: 16px;
+}
+a {
+  color: #FF23DA;
+}
+.collapsible {
+  display: flex;
+  align-items: center;
+}
+.collapsible p {
+  margin: 0;
+  margin-left: 5px;
+  text-decoration: underline;
+}
+.collapsible:before {
+  content: '\01F449';
+}
+.active:before {
+  content: '\01F447';
+}
+.active, .collapsible:hover {
+  color: #b8c0c6;
+}
+.details {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  overflow: hidden;
+}
+video {
+  padding-top: 10px;
+}
