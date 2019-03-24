@@ -21,7 +21,7 @@ a {
   color: #FF23DA;
 }
 a:active{
-  cursor: url(/links:images/drone.png) 20 20, context-menu;
+  cursor: url(/links:images/hired.png) 20 20, context-menu;
 }
 .collapsible {
   display: flex;
