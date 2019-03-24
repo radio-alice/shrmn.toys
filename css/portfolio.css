@@ -26,6 +26,7 @@ a:active, .collapsible:active {
 .collapsible {
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 .collapsible p {
   margin: 0;
