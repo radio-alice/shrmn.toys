@@ -1,0 +1,91 @@
+<html lang="en">
+  <head>
+    <title>zach's projects</title>
+    <link rel="shortcut icon" href="https://shrmn.toys/dumbass.png" type="image/x-icon">
+    <link rel="icon" href="https://shrmn.toys/dumbass.png" type="image/x-icon">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Noto+Serif|Overpass+Mono">
+    <style>
+      body, main {
+      height: 100%;
+      background-color: #EDF2F7;
+      cursor: url(/links:images/drone.png) 20 20, context-menu;
+      }
+      main {
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+        width: 60%;
+        padding-top: 50px;
+      }
+      .project {
+        margin: 20px;
+        font-size: 24px;
+        font-family: 'Noto Serif', serif;
+      }
+      p, summary {
+        font-size: 16px;
+      }
+      a {
+        color: #FF23DA;
+      }
+      .collapsible {
+        display: flex;
+        align-items: center;
+      }
+      .collapsible p {
+        margin: 0;
+        margin-left: 5px;
+        text-decoration: underline;
+      }
+      .active, .collapsible:hover {
+        color: #b8c0c6;
+      }
+      .details {
+        display: none;
+        overflow: hidden;
+      }
+      video {
+        padding-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <script type="text/javascript" src="/js/portfolio.js"></script>
+    <main>
+      <div class="project" style="font-size: 33px">Selected Projects</div>
+      <div class="project">
+        <div style="margin-bottom:10px">
+          <a href="https://github.com/radio-alice/SALMOM">
+            Techno-Visual Performance</a> (and
+          <a href="https://github.com/radio-alice/SALMOM-server">
+            server</a>)
+        </div>
+        <div class="collapsible">&#128073;<p>details...</p></div>
+        <div class="details">
+          <p>
+            I was recently invited to perform at an audiovisual festival on
+            campus, along with friends who make claymations and techno music.
+            For the show, I developed a NodeJS web app that used websockets to
+            allow people to control 'dancing' characters in the visuals. For
+            the visuals themselves, I created a Unity app that served as the
+            glue between a variety of visual effects:
+          </p>
+          <p>1) the dancing characters (controlled by viewers' phones via websocket)</p>
+          <p>2) live-edited GLSL shaders that morphed in response to incoming audio</p>
+          <p>3) midi-triggered claymation loops and</p>
+          <p>4) live midi-controlled Unity camera effects.</p>
+          <p>
+            Over the course of this project I demonstrated an ability to
+            teach myself new technologies and to organize people with divergent
+            talents (animation, music production, and programming) into a
+            cohesive team that was able to produce a "brain-melting"
+            performance.
+          </p>
+        </div>
+        <video width="800" height="450" loop controls>
+          <source src="/links:images/techno.mp4" type="video/mp4"></source>
+        </video>
+    </main>
+  </body>
+</html>
