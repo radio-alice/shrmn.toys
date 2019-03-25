@@ -16,7 +16,8 @@ main {
   text-decoration: underline;
 }
 .project {
-  margin: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   font-size: 24px;
 }
 p, summary {
