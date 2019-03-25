@@ -50,9 +50,8 @@ a:active, .collapsible:active {
 }
 .details {
   max-height: 0;
-  overflow: hidden;
+  overflow-y: hidden;
   transition: max-height 0.2s ease-out;
-  overflow: hidden;
 }
 video {
   padding-top: 10px;
