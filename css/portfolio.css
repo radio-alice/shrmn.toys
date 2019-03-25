@@ -6,7 +6,7 @@ main {
   margin: auto;
   align-items: center;
   justify-content: center;
-  width: 60%;
+  width: 55%;
   margin-top: 100px;
   font-family: 'Noto Serif', serif;
 }
@@ -57,4 +57,5 @@ a:active, .collapsible:active {
 video {
   padding-top: 10px;
   padding-bottom: 20px;
+  overflow-x: visible;
 }
