@@ -19,7 +19,7 @@ function myMove(x) {
     vy[i] = ((Math.random() * 20) - 10);
     new_row[i].style.top = posy[i] + 'px';
     new_row[i].style.left = posx[i] + 'px';
-    new_row[i].stryle.transform = 'rotate('+(Math.random()*360)+'deg)';
+    new_row[i].style.transform = 'rotate('+(Math.random()*360)+'deg)';
     var btn = document.createElement("BUTTON");
 
     if (i < x/2) {
