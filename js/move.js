@@ -20,7 +20,7 @@ function myMove(x) {
     new_row[i].style.top = posy[i] + 'px';
     new_row[i].style.left = posx[i] + 'px';
     new_row[i].style.transform = 'rotate('+(Math.random()*360)+'deg)';
-    new_ros[i].style.transformOrigin = 'center';
+    new_row[i].style.transformOrigin = 'center';
     var btn = document.createElement("BUTTON");
 
     if (i < x/2) {
