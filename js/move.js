@@ -59,7 +59,7 @@ function myMove(x) {
         posy[i] += vy[i] + ((20 * Math.random()) - 10);
         new_row[i].style.top = posy[i] + 'px';
         new_row[i].style.left = posx[i] + 'px';
-        if (counter % 5 == 0){
+        if (counter % 3 == 0){
           new_row[i].style.transform = 'rotate('+(Math.random()*20) - 5+'deg)';
         }
       }
@@ -68,7 +68,6 @@ function myMove(x) {
         var hue = 'rgb(' + (Math.floor(Math.random() * 256)) + ',' + (
           Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ')';
         container.style.backgroundColor = hue;
-        counter = 1
       }
 
     moveImg();
