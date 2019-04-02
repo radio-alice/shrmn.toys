@@ -12,14 +12,14 @@ function myMove(x) {
 
   for (var i = 0; i < x; i++) {
     new_row[i] = document.createElement('div');
-    new_row[i].style.position = "relative";
+    new_row[i].style.position = "absolute";
     posx[i] = (Math.floor(Math.random() * w));
     posy[i] = (Math.floor(Math.random() * h));
     vx[i] = ((Math.random() * 20) - 10);
     vy[i] = ((Math.random() * 20) - 10);
     new_row[i].style.top = posy[i] + 'px';
     new_row[i].style.left = posx[i] + 'px';
-
+    new_ros[i].stryle.transform = 'rotate('+(Math.random()*360)+'deg)';
     var btn = document.createElement("BUTTON");
 
     if (i < x/2) {
