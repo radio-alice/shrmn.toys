@@ -63,8 +63,8 @@ function myMove(x) {
         posy[i] += vy[i] + ((20 * Math.random()) - 10);
         new_row[i].style.top = posy[i] + 'px';
         new_row[i].style.left = posx[i] + 'px';
-        if (counter % 4 == 0){
-          btn_i.style.transform = 'rotate('+((Math.random()*50) - 25)+'deg)';
+        if (counter % 20 + (Math.random()*20) == 0){
+          btn_i.style.transform = 'rotate('+(Math.random()*360)+'deg)';
         }
       }
 
