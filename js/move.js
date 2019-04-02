@@ -59,17 +59,16 @@ function myMove(x) {
         posy[i] += vy[i] + ((20 * Math.random()) - 10);
         new_row[i].style.top = posy[i] + 'px';
         new_row[i].style.left = posx[i] + 'px';
-        if (counter % 3 == 0){
+        if (counter % 4 == 0){
           new_row[i].style.webkitTransform, new_row[i].style.transform =
-            'rotate('+(Math.random()*20) - 5+'deg)';
+            'rotate('+(Math.random()*50) - 25+'deg)';
         }
       }
 
-      if (counter % 10 == 0) {
+      if (counter % 20 == 0) {
         var hue = 'rgb(' + (Math.floor(Math.random() * 256)) + ',' + (
           Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ')';
         container.style.backgroundColor = hue;
-        console.log('counter 10');
       }
 
     moveImg();
