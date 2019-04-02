@@ -19,9 +19,11 @@ function myMove(x) {
     vy[i] = ((Math.random() * 20) - 10);
     new_row[i].style.top = posy[i] + 'px';
     new_row[i].style.left = posx[i] + 'px';
-    new_row[i].style.transform = 'rotate('+(Math.random()*360)+'deg)';
-    new_row[i].style.transformOrigin = 'center';
+
     var btn = document.createElement("BUTTON");
+    btn.style.transformOrigin = 'center';
+    btn.style.position = 'relative';
+    btn.style.transform = 'rotate('+(Math.random()*360)+'deg)';
 
     if (i < x/2) {
       var t = document.createTextNode(" HELP ME !! ");
@@ -48,6 +50,7 @@ function myMove(x) {
 
 
     for (var i = 0; i < new_row.length; i++) {
+      let btn_i = new_row[i].childNodes[0];
       if (posx[i] <= 0 || posx[i] >= (w - 100)) {
         posx[i] = (Math.floor(Math.random() * w));
         vx[i] = (Math.floor((Math.random() * 20) - 10));
@@ -61,7 +64,7 @@ function myMove(x) {
         new_row[i].style.top = posy[i] + 'px';
         new_row[i].style.left = posx[i] + 'px';
         if (counter % 4 == 0){
-          new_row[i].style.webkitTransform, new_row[i].style.transform =
+          btn_i.style.webkitTransform, btn_i.style.transform =
             'rotate('+(Math.random()*50) - 25+'deg)';
         }
       }
