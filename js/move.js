@@ -60,7 +60,7 @@ function myMove(x) {
         new_row[i].style.top = posy[i] + 'px';
         new_row[i].style.left = posx[i] + 'px';
         if (counter % 5 == 0){
-          new_row[i].style.transform = 'rotate('(Math.random()*20) - 5')';'
+          new_row[i].style.transform = 'rotate('+(Math.random()*20) - 5+'deg)';
         }
       }
 
