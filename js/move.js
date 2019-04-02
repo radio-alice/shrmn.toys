@@ -64,8 +64,7 @@ function myMove(x) {
         new_row[i].style.top = posy[i] + 'px';
         new_row[i].style.left = posx[i] + 'px';
         if (counter % 4 == 0){
-          btn_i.style.webkitTransform, btn_i.style.transform =
-            'rotate('+(Math.random()*50) - 25+'deg)';
+          btn_i.style.transform = 'rotate('+((Math.random()*50) - 25)+'deg)';
         }
       }
 
