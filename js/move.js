@@ -59,12 +59,12 @@ function myMove(x) {
         posy[i] += vy[i] + ((20 * Math.random()) - 10);
         new_row[i].style.top = posy[i] + 'px';
         new_row[i].style.left = posx[i] + 'px';
-        //if (counter % 3 == 0){
-          new_row[i].style.transform = 'rotate('+(Math.random()*20) - 5+'deg)';
-        //}
+        if (counter % 3 == 0){
+          new_row[i].setAttribute('style','transform:rotate('+(Math.random()*20) - 5+'deg)';
+        }
       }
 
-      if (counter % 5 == 0) {
+      if (counter % 10 == 0) {
         var hue = 'rgb(' + (Math.floor(Math.random() * 256)) + ',' + (
           Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ')';
         container.style.backgroundColor = hue;
@@ -74,9 +74,9 @@ function myMove(x) {
   }
 
   function moveImg() {
-    if (cpx <= 0 ||  cpx >= (w - 100)) {
+    if (cpx <= 0 ||  cpx >= (w - 10)) {
       cvx *= -1;
-    } else if (cpy <= 0 || cpy >= (h - 100)) {
+    } else if (cpy <= 0 || cpy >= (h - 10)) {
       cvy *= -1;
     }
       cpx += cvx;
