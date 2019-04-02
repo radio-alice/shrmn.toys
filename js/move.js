@@ -12,7 +12,7 @@ function myMove(x) {
 
   for (var i = 0; i < x; i++) {
     new_row[i] = document.createElement('div');
-    new_row[i].style.position = "absolute";
+    new_row[i].style.position = "relative";
     posx[i] = (Math.floor(Math.random() * w));
     posy[i] = (Math.floor(Math.random() * h));
     vx[i] = ((Math.random() * 20) - 10);
