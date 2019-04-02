@@ -7,7 +7,7 @@ function myMove(x) {
   var vy = [];
   var w = window.innerWidth;
   var h = window.innerHeight;
-  var id = setInterval(frame, 5);
+  var id = setInterval(frame, 20);
   var counter = 0;
 
   for (var i = 0; i < x; i++) {
