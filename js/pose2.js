@@ -44,10 +44,10 @@
     // Loop through all poses detected
     for (let i = 0; i < poses.length; i++) {
       let pose = poses[i].pose.keypoints[5];
-      img %= 16;
+      let img_i = i%16;
       console.log('pose found');
-      if (pose != undefined && img[i] != undefined && pose.score > 0.1) {
-        image(img[i], pose.position.x, pose.position.y, 300, 300);
+      if (pose != undefined && img[img_i] != undefined && pose.score > 0.2) {
+        image(img[img_i], pose.position.x, pose.position.y, 300, 300);
         console.log("drew img");
       }
     }
