@@ -50,11 +50,11 @@
         let posX = abs(left.position.x - right.position.x);
         let posY = abs(left.position.y - right.position.y);
         let size = sqrt((posX)^2 + (posY)^2);
-        image(img[img_i], posX, posY, 200*size, 200*size);
+        image(img[img_i], posX - (100*size), posY - (20*size), 100*size, 100*size);
       } else if (left!= undefined) {
-        image(img[img_i], left.position.x, left.position.y, 200*size, 200*size);
+        image(img[img_i], left.position.x - 300, left.position.y - 50, 300, 300);
       } else if (right!= undefined) {
-        image(img[img_i], right.position.x, right.position.y, 200*size, 200*size);
+        image(img[img_i], right.position.x, right.position.y - 50, 300, 300);
       }
     }
   }
