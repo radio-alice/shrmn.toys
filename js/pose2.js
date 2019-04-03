@@ -45,12 +45,16 @@
     for (let i = 0; i < poses.length; i++) {
       let left = poses[i].pose.keypoints[5];
       let right = poses[i].pose.keypoints[6];
-      let posX = abs(left.position.x - right.position.x);
-      let posY = abs(left.position.y - right.position.y);
-      let size = sqrt((posX)^2 + (posY)^2);
       let img_i = i%16;
-      if (pose != undefined && img[img_i] != undefined && pose.score > 0.2) {
+      if (left != undefined && right != undefined){
+        let posX = abs(left.position.x - right.position.x);
+        let posY = abs(left.position.y - right.position.y);
+        let size = sqrt((posX)^2 + (posY)^2);
         image(img[img_i], posX, posY, 200*size, 200*size);
+      } else if (left!= undefined) {
+        image(img[img_i], left.position.x, left.position.y, 200*size, 200*size);
+      } else if (right!= undefined) {
+        image(img[img_i], right.position.x, right.position.y, 200*size, 200*size);
       }
     }
   }
