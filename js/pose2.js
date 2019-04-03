@@ -43,12 +43,13 @@
   function drawKeypoints()  {
     // Loop through all poses detected
     for (let i = 0; i < poses.length; i++) {
-      let pose = poses[i].pose.keypoints[5];
+      let left = poses[i].pose.keypoints[5];
+      let right = poses[i].pose.keypoints[6];
+      let size = sqrt((left.position.x - right.position.x)^2 +
+        (left.position.y - right.position.y)^2)
       let img_i = i%16;
-      console.log('pose found');
       if (pose != undefined && img[img_i] != undefined && pose.score > 0.2) {
-        image(img[img_i], pose.position.x, pose.position.y, 300, 300);
-        console.log("drew img");
+        image(img[img_i], pose.position.x, pose.position.y, 200*size, 200*size);
       }
     }
   }
