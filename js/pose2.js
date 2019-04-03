@@ -29,8 +29,6 @@
 
   function draw() {
     image(video, 0, 0, width, height);
-
-    // We can call both functions to draw all keypoints and the skeletons
     drawKeypoints();
   }
 
@@ -47,8 +45,9 @@
     for (let i = 0; i < poses.length; i++) {
       let pose = poses[i].pose.keypoints[5];
       img %= 16;
-      if (pose != undefined && img[i] != undefined && pose.score > 0.2) {
-        image(img[i], pose.position.x - 150, pose.position.y - 150, 300, 300);
+      if (pose != undefined && img[i] != undefined && pose.score > 0.1) {
+        image(img[i], pose.position.x, pose.position.y, 300, 300);
+        console.log("drew img");
       }
     }
   }
