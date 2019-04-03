@@ -50,11 +50,11 @@ function drawKeypoints()  {
       let posX = abs(left.position.x - right.position.x);
       let posY = abs(left.position.y - right.position.y);
       let size = sqrt((posX)^2 + (posY)^2);
-      image(img[img_i], posX - (5*size), posY - size, 5*size, 5*size);
+      image(img[img_i], posX - (25*size), posY, 50*size, 50*size);
     } else if (left!= undefined && left.score > .2) {
-      image(img[img_i], left.position.x - 200, left.position.y - 50, 300, 300);
+      image(img[img_i], left.position.x - 400, left.position.y - 400, 800, 800);
     } else if (right!= undefined && right.score > .2) {
-      image(img[img_i], right.position.x, right.position.y - 50, 300, 300);
+      image(img[img_i], right.position.x, right.position.y - 50, 800, 800);
     }
   }
 }
