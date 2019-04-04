@@ -24,12 +24,8 @@ function myMove(x) {
     btn.style.transformOrigin = 'center';
     btn.style.position = 'relative';
     btn.style.transform = 'rotate('+(Math.random()*360)+'deg)';
-
-    if (i < x/2) {
-      var t = document.createTextNode(" HELP ME !! ");
-    } else {
-      var t = document.createTextNode(" ¡¡ IM RACIST ");
-    }
+    var t = document.createTextNode(" HELP ME !! ");
+    
     btn.appendChild(t);
     new_row[i].appendChild(btn);
     container.appendChild(new_row[i]);
