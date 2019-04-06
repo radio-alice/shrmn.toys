@@ -47,10 +47,14 @@ function drawKeypoints()  {
     let right = poses[i].pose.keypoints[6];
     let img_i = i;
     if (left != undefined && right != undefined && left.score > .2 && right.score > .2){
-      let posX = abs(left.position.x - right.position.x);
-      let posY = abs(left.position.y - right.position.y);
-      let size = sqrt((posX)^2 + (posY)^2);
-      image(img[img_i], posX + 35*size, posY, 50*size, 50*size);
+      let posX = (left.position.x + right.position.x)/2;
+      let posY = (left.position.y + right.position.y)/2;
+
+      let sizeX = abs(left.position.x - right.position.x);
+      let sizeY = abs(left.position.y - right.position.y);
+      let size = sqrt((sizeX)^2 + (sizeY)^2);
+
+      image(img[img_i], posX - 25*size, posY - 5*size, 50*size, 50*size);
     } else if (left!= undefined && left.score > .2) {
       image(img[img_i], left.position.x - 400, left.position.y - 400, 800, 800);
     } else if (right!= undefined && right.score > .2) {
