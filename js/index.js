@@ -31,7 +31,7 @@ function shift(x, y){
 var boys = ['🐵', '🙊', '🙉', '🙊', '🐒'];
 var counter = 0;
 function urlGoof () {
-  location.hash = boys[counter%boys.length)];
+  location.hash = boys[counter%boys.length];
   counter++;
   setTimeout(urlGoof, 50);
 }
