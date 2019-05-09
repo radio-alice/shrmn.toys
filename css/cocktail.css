@@ -4,9 +4,10 @@ html, body   {
   top:0;
   background-color: #ff99df;
 }
-fieldset, #recipe {
+fieldset {
   margin: 10%;
-  top: 0;
+}
+fieldset, #recipe {
   border-width: thick;
   border-color: #6cdf92;
   font-family: monospace;
@@ -18,8 +19,8 @@ legend, #recipe {
   background-color: #ffe600;
 }
 #recipe {
-  padding: 5%;
-  border-style: inset; 
+  padding: 2%;
+  border-style: inset;
 }
 .form {
   display: flex;
