@@ -1,4 +1,4 @@
-html, body, h1 {
+html, body {
   margin:0;
   padding:0;
   top:0;
@@ -32,7 +32,9 @@ legend, #recipe {
   margin: 5px;
   align-content: space-between;
 }
-
+h1 {
+  margin: 0;
+}
 input, label {
   margin: 20px;
   font-family: monospace;
@@ -40,7 +42,6 @@ input, label {
   font-size: 20px;
   color: #585058;
 }
-
 input[type=button] {
   border-color: #6cdf92;
   font-family: monospace;
