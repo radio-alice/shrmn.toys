@@ -14,7 +14,7 @@ fieldset, #recipe {
   font-size: 20px;
   color: #585058;
 }
-legend {
+legend, #recipe {
   background-color: #ffe600;
 }
 .form {
