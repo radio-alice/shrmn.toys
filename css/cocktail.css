@@ -1,0 +1,43 @@
+html, body   {
+  margin:0;
+  padding:0;
+  top:0;
+  background-color: #ff99df;
+}
+fieldset, #recipe {
+  margin: 10%;
+  top: 0;
+  border-width: thick;
+  border-color: #6cdf92;
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 20px;
+  color: #585058;
+}
+legend {
+  background-color: #ffe600;
+}
+.form {
+  display: flex;
+}
+.labels, .inputs {
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+  align-content: space-between;
+}
+
+input, label {
+  margin: 20px;
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 20px;
+  color: #585058;
+}
+
+input[type=button] {
+  border-color: #6cdf92;
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 20px;
+}
