@@ -17,6 +17,10 @@ fieldset, #recipe {
 legend, #recipe {
   background-color: #ffe600;
 }
+#recipe {
+  padding: 5%;
+  border-style: inset; 
+}
 .form {
   display: flex;
 }
