@@ -19,6 +19,7 @@ legend, #recipe {
   background-color: #ffe600;
 }
 #recipe {
+  margin: 5%;
   padding: 2%;
   border-style: inset;
 }
