@@ -12,7 +12,7 @@ h1 {
 }
 body {
   background-color: black;
-  cursor: url(/links:images/drone.png) 20 20, context-menu;
+  cursor: url(/assets/drone.png) 20 20, context-menu;
 }
 pre {
   color: white;

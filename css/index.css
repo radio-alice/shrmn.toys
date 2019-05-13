@@ -1,6 +1,6 @@
 html, body, .main {
         margin: 0;
-        cursor: url(/links:images/drone.png) 20 20, context-menu;
+        cursor: url(/assets/drone.png) 20 20, context-menu;
         height: 100%;
       }
 .main {
@@ -28,7 +28,7 @@ html, body, .main {
 }
 .right{
   background-color: blue;
-  background-image: url(/links:images/has_money.gif);
+  background-image: url(/assets/has_money.gif);
   background-repeat: repeat;
   padding-top: 50%;
 }
@@ -51,4 +51,4 @@ html, body, .main {
   text-align: center;
   margin: 0;
 }
-a:hover{cursor: url(/links:images/mike.png) 25 25, pointer;}
+a:hover{cursor: url(/assets/mike.png) 25 25, pointer;}

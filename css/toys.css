@@ -15,7 +15,7 @@ body {
   font-weight: 700;
   font-size: 20px;
   font-stretch: expanded;
-  cursor: url(/links:images/drone.png) 20 20, context-menu;
+  cursor: url(/assets/drone.png) 20 20, context-menu;
 }
 
 a:visited {
@@ -27,7 +27,7 @@ a:hover {
   color: #FF3DC4;
   text-decoration: none;
   background-color: #FFFFFF;
-  cursor: url(/links:images/mike.png) 25 25, pointer;
+  cursor: url(/assets/mike.png) 25 25, pointer;
 }
 a:link {
   color: white;
@@ -57,7 +57,7 @@ a:link {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("https://shrmn.toys/links:images/wormBorder.svg");
+  background-image: url("https://shrmn.toys/assets/wormBorder.svg");
   background-size: 90% 100%;
   background-position: bottom right;
   background-repeat: no-repeat;
@@ -66,7 +66,7 @@ a:link {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("https://shrmn.toys/links:images/wormTail.svg");
+  background-image: url("https://shrmn.toys/assets/wormTail.svg");
   background-size: cover;
   background-position: top left;
 }
@@ -115,7 +115,7 @@ a:link {
   text-decoration: underline;
   text-decoration-style: dotted;
   text-decoration-color: #00edb5;
-  background-image: url("https://shrmn.toys/links:images/wormMid.svg");
+  background-image: url("https://shrmn.toys/assets/wormMid.svg");
   background-size: cover;
   background-position: bottom left;
 }
@@ -140,7 +140,7 @@ input[type=range]::-webkit-slider-thumb {
   -webkit-appearance: none;
   width: 100px; /* Set a specific slider handle width */
   height: 100px; /* Slider handle height */
-  background-image: url("/links:images/creamBug.svg");
+  background-image: url("/assets/creamBug.svg");
   background-size: 100px;
   background-repeat: no-repeat;
   background-position: center;
@@ -155,7 +155,7 @@ input[type=range]::-moz-range-track {
 input[type=range]::-moz-range-thumb {
   width: 100px; /* Set a specific slider handle width */
   height: 100px; /* Slider handle height */
-  background-image: url("/links:images/creamBug.svg");
+  background-image: url("/assets/creamBug.svg");
   background-size: 100px;
   background-repeat: no-repeat;
   background-position: center;
@@ -180,7 +180,7 @@ input[type=range]::-moz-range-thumb {
 }
 .clicky {
   position: fixed;
-  background-image: url("https://shrmn.toys/links:images/nuke.gif");
+  background-image: url("https://shrmn.toys/assets/nuke.gif");
   animation: clicky 1s ease-out;
   z-index: 999;
   width: 40px;

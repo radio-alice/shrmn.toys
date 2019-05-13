@@ -27,7 +27,7 @@ a {
   color: #FF23DA;
 }
 a:active, .collapsible:active {
-  cursor: url(/links:images/hired.png) 20 20, context-menu;
+  cursor: url(/assets/hired.png) 20 20, context-menu;
 }
 .collapsible {
   display: flex;
