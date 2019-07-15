@@ -1,0 +1,71 @@
+body {
+  background-color: #DCDCDD;
+  background-image: url(https://shrmn.toys/assets/dove.gif);
+  background-repeat: repeat;
+  margin: 0px;
+}
+#main {margin: auto;}
+.form {
+  bottom: 20px;
+  margin: auto;
+  display: flex;
+  width: 70%;
+}
+.fill-width {
+  text-align: center;
+  margin: auto;
+  width: 70%;
+  font-size: 40px;
+  border-style: double;
+  border-color: #FF312E;
+  border-width: thick;
+}
+.butt {
+  width: 30%;
+}
+.title {
+  font-family: 'Baloo Thambi', cursive;
+  font-size: 60px;
+  margin: auto;
+  text-align: center;
+  color: #FF312E;
+}
+.blurb {
+  width: 70%;
+  margin: auto;
+  text-align: left;
+  font-family: 'Roboto', sans-serif;
+  color: #333138;
+  padding: 5px;
+}
+span {background-color: #ffff00;}
+h1 {margin: 0px;}
+a:visited {color: #FF312E}
+a {color: #FF312E}
+.convo {
+  margin: auto;
+  overflow: scroll;
+  width: 70%;
+  height: 70%;
+  padding: 5px;
+  background-color: rgba(65,65,76,.7);
+  margin-bottom: 8px;
+}
+.out{
+  text-align: right;
+  margin: 30px;
+  font-size: 30px;
+}
+.in{
+  text-align: left;
+  margin: 30px;
+  font-size: 30px;
+  font-family: 'Homemade Apple', cursive;
+  font-weight: bold;
+}
+.label{
+  margin: 2px;
+  font-size: 12px;
+  font-family: serif;
+  font-weight: normal;
+}
