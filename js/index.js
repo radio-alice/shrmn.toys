@@ -28,11 +28,11 @@ function shift(x, y){
   vid.filter = "hue-rotate(" + hue + "deg) invert(" + inv + "%) blur(" + blu+ "px) saturate(500%)";
 }
 
-var boys = ['🐵', '🙊', '🙉', '🙊', '🐒'];
-var counter = 0;
-function urlGoof () {
-  location.hash = boys[counter%boys.length];
-  counter++;
-  setTimeout(urlGoof, 50);
-}
-urlGoof();
+// var boys = ['🐵', '🙊', '🙉', '🙊', '🐒'];
+// var counter = 0;
+// function urlGoof () {
+//   location.hash = boys[counter%boys.length];
+//   counter++;
+//   setTimeout(urlGoof, 50);
+// }
+// urlGoof();
